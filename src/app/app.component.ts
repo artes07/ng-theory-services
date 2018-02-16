@@ -3,8 +3,7 @@ import { CarsService } from './cars.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  providers: [CarsService]
+  templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
 
@@ -14,9 +13,5 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.cars = this.carService.cars;
-  }
-
-  addCarToList(carName: string) {
-    this.carService.addCar(carName);
   }
 }
